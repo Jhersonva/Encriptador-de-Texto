@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Encriptador/Desencriptador</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Challenge ONE</h1>
+    <h2>Encriptador/Desencriptador</h1> <br>
+        <p style="text-align: left;">👀: Solo letras minúsculas y sin acentos.</p>
+
+    <div class="input-container">
+      <label for="texto" id="encabezado-container">Texto:</label>
+      <textarea id="texto" rows="4" placeholder="Ingresa tu texto aquí" required></textarea>
+    </div>
+
+    <div class="options">
+      <button class="encrypt-btn" onclick="encriptar()">Encriptar</button>
+      
+      <button class="decrypt-btn" onclick="desencriptar()">Desencriptar</button>
+    </div>
+
+    <div class="input-container" >
+      <label for="resultado" id="encabezado-container">Resultado:</label>
+      <div id="mensaje-img-container">
+        <img id="mensaje-img" src="img/mensaje_no_encontrado.jpg" alt="Ningún mensaje encontrado">
+      </div>
+      <textarea id="resultado" rows="4" readonly style="display: none;" required></textarea> <br>
+      <button class="copy-btn" onclick="copiar()">Copiar</button>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
